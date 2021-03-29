@@ -1,0 +1,91 @@
+<footer class="footer">
+  <div class="footer__container container container_large">
+    <div class="footer__top">
+      <div class="footer__logo">
+        {{ icon('footer__logo-icon','logo','165','38') }}
+      </div>
+      <div class="footer__grid">
+        <div class="footer__col">
+          <h4 class="footer__heading">Company</h4>
+          <ul class="footer__list">
+            <li class="footer__item">
+              <a href="#" class="footer__link">Products</a>
+            </li>
+            <li class="footer__item">
+              <a href="#" class="footer__link">Find an installer</a>
+            </li>
+            <li class="footer__item">
+              <a href="#" class="footer__link">Inspiration</a>
+            </li>
+            <li class="footer__item">
+              <a href="#" class="footer__link">Samples</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4 class="footer__heading">Pro</h4>
+          <ul class="footer__list">
+            <li class="footer__item">
+              <a href="#" class="footer__link">Pro Overview</a>
+            </li>
+            <li class="footer__item">
+              <a href="#" class="footer__link">Designers</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4 class="footer__heading">Support</h4>
+          <ul class="footer__list">
+            <li class="footer__item">
+              <a href="#" class="footer__link">Contact Us</a>
+            </li>
+            <li class="footer__item">
+              <a href="#" class="footer__link">About</a>
+            </li>
+            <li class="footer__item">
+              <a href="#" class="footer__link">Avaeda Brand</a>
+            </li>
+            <li class="footer__item">
+              <a href="/faq.html" class="footer__link">FAQ</a>
+            </li>
+            <li class="footer__item">
+              <a href="/privacy.html" class="footer__link">Privacy Policies</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer__contact">
+      <div class="footer__title">Join The Mailing List</div>
+      <div class="footer__email form form_footer-email">
+        <input class="form__input" id="form-footer-email" type="email" required name="email-address" placeholder="Email Address">
+        <button class="footer__email-btn btn btn_submit" type="submit" value="Submit" id="form-footer-submit">Submit{{ icon('footer__email-icon','arrow-right','7','12') }}</button>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <div class="footer__copyright">
+        © 2021 AVAEDA
+      </div>
+      <div class="footer__side">
+        <div class="footer__side-title">Follow us</div>
+        <ul class="footer__social">
+          <li class="footer__social-item">
+            <a href="#" class="footer__social-link">
+              {{ icon('footer__social-icon','facebook','9','17') }}
+            </a>
+          </li>
+          <li class="footer__social-item">
+            <a href="#" class="footer__social-link">
+              {{ icon('footer__social-icon','twitter','16','14') }}
+            </a>
+          </li>
+          <li class="footer__social-item">
+            <a href="#" class="footer__social-link">
+              {{ icon('footer__social-icon','instagram','17','17') }}
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>

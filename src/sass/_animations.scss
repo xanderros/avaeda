@@ -1,0 +1,32 @@
+// animations
+// default values
+$animation-offset-x: 100px;
+$animation-offset-y: 20px;
+
+// hide elements while they are not in viewport
+[data-animation='fade'],
+[data-animation='fade-up'],
+[data-animation='fade-left'],
+[data-animation='fade-right'] {
+  opacity: 0;
+}
+[data-animation='fade-up'] {
+  transform: translateY($animation-offset-y);
+}
+[data-animation='fade-left'] {
+  transform: translateX($animation-offset-x);
+}
+[data-animation='fade-right'] {
+  transform: translateX(-$animation-offset-x);
+}
+
+// lazyload
+.lazyload,
+.lazyloading {
+  opacity: 0;
+}
+
+.lazyloaded {
+  opacity: 1;
+  transition: opacity 0.1s ease-out;
+}

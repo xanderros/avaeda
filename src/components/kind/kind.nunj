@@ -1,0 +1,40 @@
+<div class="kind">
+  <div class="kind__wrapper">
+    <div class="kind__container">
+      <div class="kind__item">
+        <div class="kind__bg-wrapper">
+          <picture class="kind__bg">
+            {#<source type="image/jpeg" srcset="/images/domestic_mob.jpg, /images/domestic_mob@2x.jpg 2x" media="(max-width: 480px)">#}
+            <img class="kind__bg-img" src="/images/domestic.jpg" srcset="/images/domestic@2x.jpg 2x" alt="">
+          </picture>
+        </div>
+        <a href="#" class="kind__inner">
+          <div class="kind__content">
+            <h3 class="kind__title">Domestic</h3>
+            <p class="kind__text">
+              Use Avaeda to enhance your public spaces to allow you to
+              expand your outdoor spaces you cant normally use.
+            </p>
+          </div>
+        </a>
+      </div>
+      <div class="kind__item">
+        <div class="kind__bg-wrapper">
+          <picture class="kind__bg">
+            {#<source type="image/jpeg" srcset="/images/commercial_mob.jpg, /images/commercial_mob@2x.jpg 2x" media="(max-width: 480px)">#}
+            <img class="kind__bg-img" src="/images/commercial.jpg" srcset="/images/commercial@2x.jpg 2x" alt="">
+          </picture>
+        </div>
+        <a href="#" class="kind__inner">
+          <div class="kind__content">
+            <h3 class="kind__title">Commercial</h3>
+            <p class="kind__text">
+              Take those unloved outdoor spaces in your
+              gardens and make them a place to be proud of.
+            </p>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>

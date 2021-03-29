@@ -1,0 +1,242 @@
+---
+title: Tectonic overview
+
+keywords:
+description:
+
+socialTitle:
+socialDescription:
+socialImg:
+socialImgSquare:
+socialImgTwitter:
+---
+{% extends "../../ext/base.nunj" %}
+
+{% block content %}
+  {{ header() }}
+  <div class="page">
+
+    {{ hero({
+      scrollBtn: 'true',
+      title: 'Introducing Tectonic',
+      text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+      imgName: 'hero-tectonic',
+      imgAlt: 'Tectonic'
+    }) }}
+
+    {{ view({
+      data: [{
+        active: 'true',
+        title: 'About Techtonic',
+        link: '/tectonic'
+      },{
+        title: 'Steel Frames',
+        link: '/tectonic/steel-frames.html'
+      },{
+        title: 'Support Pedistals',
+        link: '/tectonic/support-pedistals.html'
+      },{
+        title: 'Shop Tectonic',
+        link: '/tectonic/shop.html'
+      }]
+    }) }}
+
+    {{ wall({
+      bgColor: "pink-granite",
+      title: "Changing the way we treat outdoor spaces.",
+      text: "Our goal is to create a space, both physical and online, where this community."
+    }) }}
+
+    <div class="box">
+      <div class="container container_small">
+        <div class="caption">
+          <div class="caption__title heading">
+            Key features
+          </div>
+          <div class="caption__desc text">
+            What makes Tectonic products the perfect choice?
+          </div>
+        </div>
+        {{ tabs({
+          data: [{
+            id: '1',
+            active: 'true',
+            tabName: 'Stunning finishes',
+            imgName: 'installation',
+            imgFormat: 'png',
+            imgAlt: '',
+            iconName: 'ph_dark',
+            iconWidth: '41',
+            iconHeight: '35',
+            title: 'Absolutely zero',
+            subtitle: 'Installation costs',
+            text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur.'
+          },{
+            id: '2',
+            tabName: 'Low maintenance',
+            imgName: 'installation',
+            imgFormat: 'png',
+            imgAlt: '',
+            iconName: 'ph_dark',
+            iconWidth: '41',
+            iconHeight: '35',
+            title: 'Absolutely zero 2',
+            subtitle: 'Installation costs',
+            text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur.'
+          },{
+            id: '3',
+            tabName: 'Sustainable',
+            imgName: 'installation',
+            imgFormat: 'png',
+            imgAlt: '',
+            iconName: 'ph_dark',
+            iconWidth: '41',
+            iconHeight: '35',
+            title: 'Absolutely zero 3',
+            subtitle: 'Installation costs',
+            text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur.'
+          }]
+        }) }}
+      </div>
+    </div>
+
+    <div class="section bg-chalk">
+      <div class="container">
+        {{ unit({
+          note: 'Section label',
+          title: 'Steel Frames',
+          text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur.',
+          points: [{
+            iconName: 'tools',
+            iconWidth: '30',
+            iconHeight: '29',
+            text: 'Moulded on real oak'
+          },{
+            iconName: 'tools',
+            iconWidth: '30',
+            iconHeight: '29',
+            text: 'Highly slip-resistent'
+          },{
+            iconName: 'tools',
+            iconWidth: '30',
+            iconHeight: '29',
+            text: 'Rot and split resistent'
+          }],
+          buttons: [{
+            title: 'More information',
+            link: '/tectonic/steel-frames.html'
+          },{
+            title: 'Explore products',
+            link: '#'
+          }],
+          img: 'tile_1',
+          imgFormat: 'jpg'
+        }) }}
+      </div>
+    </div>
+
+    <div class="section bg-chalk-lucent">
+      <div class="container">
+        {{ unit({
+          reverse: 'true',
+          note: 'Section label',
+          title: 'Support Pedistals',
+          text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur.',
+          points: [{
+            iconName: 'tools',
+            iconWidth: '30',
+            iconHeight: '29',
+            text: 'Moulded on real oak'
+          },{
+            iconName: 'tools',
+            iconWidth: '30',
+            iconHeight: '29',
+            text: 'Highly slip-resistent'
+          },{
+            iconName: 'tools',
+            iconWidth: '30',
+            iconHeight: '29',
+            text: 'Rot and split resistent'
+          }],
+          buttons: [{
+            title: 'More information',
+            link: '/tectonic/support-pedistals.html'
+          },{
+            title: 'Explore products',
+            link: '#'
+          }],
+          img: 'tile_1',
+          imgFormat: 'jpg'
+        }) }}
+      </div>
+    </div>
+
+    <div class="section section_small bg-black">
+      <div class="slider slider_gallery">
+        <div class="container">
+          <div class="slider__header">
+            <h2 class="heading color-white">
+              Beautifully<br>
+              designed spaces
+            </h2>
+            <div class="slider__arrows">
+              <div class="swiper-button-prev">{{ icon('slider__arrow','arrow-nav','14','12') }}</div>
+              <div class="swiper-button-next">{{ icon('slider__arrow','arrow-nav','14','12') }}</div>
+            </div>
+          </div>
+        </div>
+        <div class="slider__box">
+          <div class="swiper-container">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img class="slider__img" src="/images/gallery_1.jpg" srcset="/images/gallery_1@2x.jpg 2x" alt="">
+              </div>
+              <div class="swiper-slide">
+                <img class="slider__img" src="/images/gallery_2.jpg" srcset="/images/gallery_2@2x.jpg 2x" alt="">
+              </div>
+              <div class="swiper-slide">
+                <img class="slider__img" src="/images/gallery_1.jpg" srcset="/images/gallery_1@2x.jpg 2x" alt="">
+              </div>
+              <div class="swiper-slide">
+                <img class="slider__img" src="/images/gallery_2.jpg" srcset="/images/gallery_2@2x.jpg 2x" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="slider__scrollbar container">
+          <div class="swiper-scrollbar"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section section_small">
+      <div class="explore">
+        <div class="container">
+          <div class="explore__header">
+            <h2 class="explore__title title">
+              Explore Tectonic
+            </h2>
+            <div class="explore__btn">
+              <a href="#" class="link-btn">{{ icon('link-btn__icon','link-icon','32','32') }}View the range</a>
+            </div>
+          </div>
+        </div>
+        <div class="explore__figure">
+          <div class="explore__bg">
+            {{ img({ className: 'explore__bg-img', name: 'domestic', format: 'jpg', mobile: 'true', cover: 'true'}) }}
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+
+    {{ touch({
+      title: "Want to learn more about the projects we offer? <br>Get in touch with us.",
+      buttonLink: '#',
+      buttonTitle: 'Find Out More',
+      imgName: "learn-green"
+    }) }}
+  </div>
+  {% include '../../../components/footer/footer.nunj' %}
+{% endblock content %}

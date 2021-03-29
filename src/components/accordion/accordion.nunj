@@ -1,0 +1,17 @@
+{% macro accordion(props) %}
+  <div class="accordion{% if props.type %} accordion_{{ props.type }}{% endif %}{% if props.showOne === 'false' %}{% else %} accordion_show-one{% endif %}" data-animation="fade-up" data-animation-delay="200">
+    {% for item in props.data %}
+      <div class="accordion__item{% if item.active %} _active{% endif %}">
+        <div class="accordion__btn">
+          <h3 class="accordion__title">{{ item.title }}</h3>
+          <span class="accordion__arrow"></span>
+        </div>
+        <div class="accordion__box">
+          <div class="accordion__content">
+            {{ item.content | safe }}
+          </div>
+        </div>
+      </div>
+    {% endfor %}
+  </div>
+{% endmacro %}

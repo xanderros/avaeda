@@ -1,0 +1,251 @@
+.kind {
+  &__item {
+    display: flex;
+    flex-direction: column;
+  }
+  &__inner {
+    flex: 1;
+    display: flex;
+    align-items: flex-end;
+    text-decoration: none;
+    color: $white;
+    overflow: hidden;
+    position: relative;
+    z-index: 7;
+  }
+  &__content {
+    position: relative;
+    z-index: 5;
+  }
+  &__title {
+    font-size: 30px;
+    line-height: 1.5;
+    color: $white;
+  }
+  &__text {
+    margin-top: 16px;
+    font-size: 16px;
+    line-height: 28px;
+    letter-spacing: -0.02em;
+    color: $white-lucent;
+  }
+  &__bg {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100vw;
+  }
+  &__bg-img {
+    @include img-cover;
+  }
+
+  @include media-down-sm {
+    &__item {
+      position: relative;
+      height: 100vh;
+
+      &:after {
+        content: '';
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        height: 55%;
+        background-image: linear-gradient(0deg, #000000 50.52%, rgba(0, 0, 0, 0) 100%);
+        opacity: 0.7;
+        pointer-events: none;
+      }
+    }
+    &__inner {
+      padding: 34px $offset-side-sm;
+    }
+    &__text {
+      padding-right: 24px;
+    }
+  }
+  @include media-up-sm {
+    padding-left: 4px;
+    padding-right: 4px;
+
+    &_active {
+      &_1 {
+        .kind {
+          &__item {
+            &:last-child {
+              .kind {
+                &__content {
+                  opacity: 0;
+                }
+              }
+            }
+          }
+        }
+      }
+      &_2 {
+        .kind {
+          &__item {
+            &:first-child {
+              .kind {
+                &__content {
+                  opacity: 0;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
+    &__wrapper {
+      @include responsive-ratio(1400,1200);
+      position: relative;
+
+      &:after {
+        content: '';
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 2px;
+        background-color: $white;
+        z-index: 10;
+        pointer-events: none;
+      }
+    }
+    &__container {
+      overflow: hidden;
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+
+      &:after {
+        content: '';
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        height: 66.3%;
+        background-image: linear-gradient(0deg, #000000 50.52%, rgba(0, 0, 0, 0) 100%);
+        opacity: 0.7;
+        pointer-events: none;
+        z-index: 3;
+      }
+    }
+    &__item {
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+
+      &:first-child {
+        .kind {
+          &__bg-wrapper,
+          &__bg {
+            left: 0;
+          }
+        }
+        &:hover {
+          .kind {
+            &__bg-wrapper {
+              z-index: 1;
+            }
+          }
+        }
+      }
+      &:last-child {
+        align-items: flex-end;
+
+        .kind {
+          &__bg-wrapper,
+          &__bg {
+            right: 0;
+          }
+          &__bg-img {
+            left: auto;
+            right: 0;
+          }
+        }
+        &:hover {
+          .kind {
+            &__bg-wrapper {
+            }
+          }
+        }
+      }
+      &:hover {
+        .kind {
+          &__bg-wrapper {
+            width: 100%;
+          }
+        }
+      }
+    }
+    &__bg-wrapper {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      width: 50%;
+      overflow: hidden;
+    }
+    &__inner {
+      width: 50%;
+      padding-left: 2px;
+      padding-right: 2px;
+      padding-bottom: 5.6%;
+    }
+    &__content {
+      max-width: 560px;
+      padding-left: 20px;
+      padding-right: 20px;
+      margin-left: auto;
+      margin-right: auto;
+      text-align: center;
+      transition: opacity $default-transition;
+    }
+    &__title {
+      font-size: 30px;
+    }
+    &__text {
+      min-height: 112px;
+      margin-top: 18px;
+      font-size: 16px;
+    }
+  }
+  @include media-up-md {
+    &__content {
+      padding-left: 30px;
+      padding-right: 30px;
+    }
+    &__text {
+      min-height: 84px;
+    }
+  }
+  @include media-up-lg {
+    padding-left: 8px;
+    padding-right: 8px;
+
+    &__wrapper {
+      @include responsive-ratio(1424,695);
+
+      &:after {
+        width: 4px;
+      }
+    }
+    &__title {
+      font-size: 36px;
+    }
+    &__text {
+      margin-top: 31px;
+      font-size: 18px;
+    }
+  }
+  @include media-up-xl {
+    &__text {
+      min-height: 0;
+    }
+  }
+}

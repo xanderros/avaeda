@@ -1,0 +1,75 @@
+<div class="figure">
+  <div class="figure__bg">
+    {{ img({ className: 'figure__bg-img', name: 'illustration', format: 'jpg', cover: 'true'}) }}
+  </div>
+  <div class="figure__container">
+    <div class="figure__point" style="top: 45%;left: 62.3%;">
+      <div class="figure__btn"></div>
+      <div class="figure__popup">
+        <div class="figure__content">
+          <div class="figure__close"><span class="figure__close-icon"></span></div>
+          <div class="figure__title">
+            <a href="#" class="figure__link">Stone Effect Porcelain{{ icon('figure__link-icon','arrow-right','7','12') }}</a>
+          </div>
+          <div class="figure__desc">
+            Paving
+          </div>
+          <div class="figure__price">
+            <span class="figure__price-value">£75</span>per m2
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="figure__point" style="top: 57%;left: 19.5%;">
+      <div class="figure__btn"></div>
+      <div class="figure__popup">
+        <div class="figure__content">
+          <div class="figure__close"><span class="figure__close-icon"></span></div>
+          <div class="figure__title">
+            <a href="#" class="figure__link">Stone Effect Porcelain{{ icon('figure__link-icon','arrow-right','7','12') }}</a>
+          </div>
+          <div class="figure__desc">
+            Paving
+          </div>
+          <div class="figure__price">
+            <span class="figure__price-value">£75</span>per m2
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="figure__point" style="top: 76.6%;left: 70.4%;">
+      <div class="figure__btn"></div>
+      <div class="figure__popup">
+        <div class="figure__content">
+          <div class="figure__close"><span class="figure__close-icon"></span></div>
+          <div class="figure__title">
+            <a href="#" class="figure__link">Stone Effect Porcelain{{ icon('figure__link-icon','arrow-right','7','12') }}</a>
+          </div>
+          <div class="figure__desc">
+            Paving
+          </div>
+          <div class="figure__price">
+            <span class="figure__price-value">£75</span>per m2
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="figure__point" style="top: 93.4%;left: 72%;">
+      <div class="figure__btn"></div>
+      <div class="figure__popup">
+        <div class="figure__content">
+          <div class="figure__close"><span class="figure__close-icon"></span></div>
+          <div class="figure__title">
+            <a href="#" class="figure__link">Stone Effect Porcelain{{ icon('figure__link-icon','arrow-right','7','12') }}</a>
+          </div>
+          <div class="figure__desc">
+            Paving
+          </div>
+          <div class="figure__price">
+            <span class="figure__price-value">£75</span>per m2
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

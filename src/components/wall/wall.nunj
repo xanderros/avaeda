@@ -1,0 +1,8 @@
+{% macro wall(props) %}
+<div class="wall{% if props.bgColor %} bg-{{ props.bgColor }}{% endif %}">
+  <div class="wall__container container">
+    <h2 class="wall__title title">{{ props.title | safe }}</h2>
+    <div class="wall__text">{{ props.text }}</div>
+  </div>
+</div>
+{% endmacro %}

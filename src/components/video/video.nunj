@@ -1,0 +1,19 @@
+<div class="video">
+  <div class="video__bg">
+    {{ img({ className: 'video__bg-img', name: 'video-1_ph', format: 'jpg', cover: 'true'}) }}
+    {#<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/yy67gHrg2xc?controls=0&modestbranding&showinfo=0&rel=0&autoplay=1&loop=1&enablejsapi=1" frameborder="0" allowfullscreen></iframe>#}
+  </div>
+  <div class="video__content">
+    <div class="video__header">
+      <div class="video__note">
+        OUR FEATURES
+      </div>
+      <h2 class="video__title">
+        Tailored to suit you
+      </h2>
+    </div>
+    <div class="video__controls">
+      <button type="button" class="video__btn">{{ icon('video__btn-icon video__btn-icon_pause','pause','20','20') }}{{ icon('video__btn-icon video__btn-icon_play','play','20','20') }}Pause Video</button>
+    </div>
+  </div>
+</div>

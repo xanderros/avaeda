@@ -1,0 +1,39 @@
+---
+title: 404 Page not found
+
+url: 404
+
+keywords:
+description:
+
+socialTitle:
+socialDescription:
+socialImg:
+socialImgSquare:
+socialImgTwitter:
+
+navWhite: true
+---
+{% extends "../ext/base.nunj" %}
+
+{% block content %}
+  {{ header() }}
+  <div class="page">
+    <div class="page-cover">
+      {{ img({ className: 'page-cover__bg-img', name: 'cover-404', format: 'jpg', mobile: 'true', cover: 'true'}) }}
+      <div class="page-cover__content">
+        <div class="container">
+          <h1 class="page-cover__title title-big">
+            We couldn’t find the page you were looking for.
+          </h1>
+          <p class="page-cover__desc text">
+            This page doesn’t exist. It may have been removed or alternatively check the URL is correct.
+          </p>
+          <div class="page-cover__btn">
+            <a href="/" class="btn btn_white">Go home</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+{% endblock content %}

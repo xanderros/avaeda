@@ -1,0 +1,82 @@
+{% from "../../components/header/header.nunj" import header %}
+{% from "../../components/hero/hero.nunj" import hero %}
+{% from "../../components/img/img.nunj" import img %}
+{% from "../../components/icon/icon.nunj" import icon %}
+{% from "../../components/touch/touch.nunj" import touch %}
+{% from "../../components/wall/wall.nunj" import wall %}
+{% from "../../components/advantages/advantages.nunj" import advantages %}
+{% from "../../components/tabs/tabs.nunj" import tabs %}
+{% from "../../components/block/block.nunj" import block %}
+{% from "../../components/accordion/accordion.nunj" import accordion %}
+{% from "../../components/view/view.nunj" import view %}
+{% from "../../components/unit/unit.nunj" import unit %}
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="keywords" content="{{ keywords }}">
+    <meta name="description" content="{{ description }}">
+
+    <title>{{ title }} | Avaeda</title>
+
+    <link rel="canonical" href="https://avaeda.co.uk/{{ url }}">
+
+    <link rel="preload" as="font" type="font/woff2" href="/fonts/Mark-Light.woff2" crossorigin>
+    <link rel="preload" as="font" type="font/woff2" href="/fonts/Mark-Regular.woff2" crossorigin>
+    <link rel="preload" as="font" type="font/woff2" href="/fonts/Mark-Medium.woff2" crossorigin>
+    <link rel="preload" as="font" type="font/woff2" href="/fonts/Mark-Bold.woff2" crossorigin>
+    <link rel="preload" as="font" type="font/woff2" href="/fonts/Mark-Book.woff2" crossorigin>
+
+    {% block stylesheets %}
+      <link rel="stylesheet" href="/css/styles.css"/>
+    {% endblock stylesheets %}
+
+    {#<link rel="preconnect" href="//js.hsforms.net/">#}
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="{% if socialTitle %}{{ socialTitle }}{% else %}Avaeda{% endif %}">
+    <meta name="twitter:description" content="{% if socialDescription %}{{ socialDescription }}{% else %}Avaeda{% endif %}">
+    <meta name="twitter:image" content="https://avaeda.co.uk/images/{% if socialImgTwitter %}{{ socialImgTwitter }}{% else %}social-twitter.jpg{% endif %}">
+
+    <!-- Facebook -->
+    <meta property="og:url" content="https://avaeda.co.uk/{{ url }}">
+    <meta property="og:title" content="{% if socialTitle %}{{ socialTitle }}{% else %}Avaeda{% endif %}">
+    <meta property="og:description" content="{% if socialDescription %}{{ socialDescription }}{% else %}Avaeda{% endif %}">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="avaeda.co.uk">
+    <meta property="og:image" content="https://avaeda.co.uk/images/{% if socialImg %}{{ socialImg }}{% else %}social-main.jpg{% endif %}">
+    <meta property="og:image:type" content="image/jpeg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image" content="https://avaeda.co.uk/images/{% if socialImgSquare %}{{ socialImgSquare }}{% else %}social-square.jpg{% endif %}">
+    <meta property="og:image:type" content="image/jpeg">
+    <meta property="og:image:width" content="500">
+    <meta property="og:image:height" content="500">
+
+    <!-- Favicons -->
+    <link rel="shortcut icon" type="image/x-icon" href="https://images.squarespace-cdn.com/content/v1/5f58e370bc5b1f6d1d497f4f/1599748048825-Y6F9IVOUJ8JD6IHMPVIY/ke17ZwdGBToddI8pDm48kGnOzYTcEVMLxOIY9d391qBZw-zPPgdn4jUwVcJE1ZvWhcwhEtWJXoshNdA9f1qD7WZOYOGuexubfahzU3poi_oRiGplQpDO-JFqb8Xn42u1dgn0AvuFmfk1iI9anl3ZmQ/favicon.ico?format=100w"/>
+    {#<link rel="apple-touch-icon" sizes="180x180" href="/images/favicons/apple-touch-icon.png">#}
+    {#<link rel="icon" type="image/png" sizes="32x32" href="/images/favicons/favicon-32x32.png">#}
+    {#<link rel="icon" type="image/png" sizes="16x16" href="/images/favicons/favicon-16x16.png">#}
+    {#<link rel="manifest" href="/images/favicons/site.webmanifest">#}
+    {#<link rel="mask-icon" href="/images/favicons/safari-pinned-tab.svg" color="#5bbad5">#}
+    {#<link rel="shortcut icon" href="/images/favicons/favicon.ico">#}
+    {#<meta name="msapplication-TileColor" content="#038d91">#}
+    {#<meta name="msapplication-config" content="/images/favicons/browserconfig.xml">#}
+    {#<meta name="theme-color" content="#ffffff">#}
+  </head>
+
+  <body>
+    <div class="wrapper">
+      {% block content %}{% endblock content %}
+    </div>
+
+    {% block scripts %}
+      <script src="/js/bundle.js"></script>
+    {% endblock scripts %}
+  </body>
+</html>

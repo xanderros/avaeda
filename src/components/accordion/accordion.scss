@@ -1,0 +1,128 @@
+// Expand/collapse and Accordion
+$accordion-transition: 0.3s ease-out;
+
+.accordion {
+  &__item {
+    &:not(:last-child) {
+      border-bottom: 1px solid $border-color-grey;
+    }
+
+    &._active {
+      .accordion {
+        &__arrow {
+          &:before {
+            transform: rotate(135deg);
+          }
+          &:after {
+            transform: rotate(225deg);
+          }
+        }
+      }
+    }
+  }
+
+  // header button
+  &__btn {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    position: relative;
+    padding: 21px 12px;
+
+    &:hover {
+      + .accordion__content {
+        will-change: max-height;
+      }
+    }
+  }
+  &__title {
+    @include font-family-book;
+    display: flex;
+    align-items: center;
+    flex: 1;
+    padding-right: 40px;
+    font-size: 16px;
+    line-height: 1.4;
+    letter-spacing: -0.02em;
+  }
+  &__arrow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+
+    &:before,
+    &:after {
+      content: '';
+      position: absolute;
+      margin-top: -1px;
+      top: 50%;
+      width: 9px;
+      height: 1px;
+      background-color: $black;
+      transition: background-color $default-transition, transform $accordion-transition;
+    }
+    &:before {
+      right: 6px;
+      transform: rotate(225deg);
+    }
+    &:after {
+      right: 0;
+      transform: rotate(135deg);
+    }
+  }
+
+  // content
+  &__box {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height $accordion-transition;
+  }
+  &__content {
+    padding: 9px 30px 38px 12px;
+    font-size: 14px;
+    line-height: 2.15;
+    color: $earth;
+
+    p, ul, ol {
+      &:not(:last-child) {
+        margin-bottom: 22px;
+      }
+    }
+
+    @include media-up-md {
+      p, ul, ol {
+        &:not(:last-child) {
+          margin-bottom: 30px;
+        }
+      }
+    }
+  }
+
+  &_big {
+    .accordion {
+      &__title {
+
+      }
+    }
+  }
+
+  @include media-up-md {
+    &__btn {
+      padding: 36px 0 37px;
+    }
+    &__title {
+      font-size: 18px;
+      padding-right: 65px;
+    }
+    &__arrow {
+      &:before,
+      &:after {
+        margin-top: 1px;
+      }
+    }
+    &__content {
+      padding: 9px 32px 48px 0;
+    }
+  }
+}

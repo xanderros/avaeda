@@ -1,0 +1,25 @@
+{% from "../../components/icon/icon.nunj" import icon %}
+{% macro hero(props) %}
+  <section class="hero{% if props.height %} hero_height_{{ props.height }}{% endif %}{% if props.verticalAlign %} hero_v_{{ props.verticalAlign }}{% endif %}{% if props.horizontalAlign %} hero_h_{{ props.horizontalAlign }}{% endif %}">
+    <picture class="hero__bg" data-animation="fade">
+      <source type="image/jpeg" srcset="/images/{{ props.imgName }}_mob.jpg, /images/{{ props.imgName }}_mob@2x.jpg 2x" media="(max-width: 480px)">
+      <img class="hero__bg-img" src="/images/{{ props.imgName }}.jpg" srcset="/images/{{ props.imgName }}@2x.jpg 2x" alt="">
+    </picture>
+    <div class="hero__container container">
+      <div class="hero__content">
+        <h1 class="hero__title title-big" data-animation="fade-up">{{ props.title | safe }}</h1>
+        <p class="hero__text" data-animation="fade-up" data-animation-delay="100">{{ props.text }}</p>
+        {% if props.buttonName %}
+          <div class="hero__btn" data-animation="fade-up" data-animation-delay="200">
+            <a class="btn btn_white" href="{{ props.buttonLink }}">{{ props.buttonName }}</a>
+          </div>
+        {% endif %}
+      </div>
+      {% if props.scrollBtn %}
+      <div class="hero__scroll">
+        <button type="button" class="hero__scroll-btn">{{ icon('hero__scroll-icon','scroll','15','19') }}Scroll down</button>
+      </div>
+      {% endif %}
+    </div>
+  </section>
+{% endmacro %}

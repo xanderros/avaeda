@@ -1,0 +1,23 @@
+{% from "../../components/icon/icon.nunj" import icon %}
+{% macro block(props) %}
+  <div class="block{% if props.reverse %} block_reverse{% endif %}">
+    <div class="block__base">
+      {% if props.note %}
+        <div class="block__note note">{{ props.note }}</div>
+      {% endif %}
+      <h3 class="block__title heading">{{ props.title }}{% if props.subtitle %}<span>{{ props.subtitle }}</span>{% endif %}</h3>
+      {% if props.desc %}
+        <div class="block__desc">{{ props.desc | safe }}</div>
+      {% endif %}
+      <p class="block__text text">{{ props.text }}</p>
+      {% if props.link %}
+      <div class="block__link">
+        <a href="{{ props.link }}" class="link-btn">{{ icon('link-btn__icon','link-icon','32','32') }}{{ props.linkText }}</a>
+      </div>
+      {% endif %}
+    </div>
+    <div class="block__side">
+      <img class="block__img lazyload" data-src="/images/{{ props.img }}.{{ props.imgFormat }}" data-srcset="/images/{{ props.img }}@2x.{{ props.imgFormat }} 2x" alt="{{ props.title }}">
+    </div>
+  </div>
+{% endmacro %}

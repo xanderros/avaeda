@@ -1,0 +1,16 @@
+{% macro touch(props) %}
+<div class="touch">
+  <div class="touch__bg">
+    <picture>
+      <source type="image/jpeg" data-srcset="../images/{{ props.imgName }}_mob.jpg, ../images/{{ props.imgName }}_mob@2x.jpg 2x" media="(max-width: 480px)">
+      <img class="touch__bg-img lazyload" data-src="../images/{{ props.imgName }}.jpg" data-srcset="../images/{{ props.imgName }}@2x.jpg 2x" alt="{{ props.title }}" data-sizes="auto">
+    </picture>
+  </div>
+  <div class="touch__container container">
+    <h3 class="touch__title">{{ props.title | safe }}</h3>
+    <div class="touch__btn">
+      <a href="{{ props.buttonLink }}" class="btn btn_white">{{ props.buttonTitle }}</a>
+    </div>
+  </div>
+</div>
+{% endmacro %}

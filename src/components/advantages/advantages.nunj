@@ -1,0 +1,12 @@
+{% macro advantages(props) %}
+<div class="advantages">
+  <div class="advantages__container container">
+    {% for item in props.data %}
+    <div class="advantages__item">
+      <svg class="advantages__icon" width="{{ item.iconWidth }}" height="{{ item.iconHeight }}"><use xlink:href="/svg/sprite.svg#icon-{{ item.iconName }}"></use></svg>
+      <div class="advantages__title">{{ item.title }}</div>
+    </div>
+    {% endfor %}
+  </div>
+</div>
+{% endmacro %}

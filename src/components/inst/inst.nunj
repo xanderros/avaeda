@@ -1,0 +1,35 @@
+<div class="inst">
+  <div class="inst__header container">
+    <div class="inst__profile"><a href="#" target="_blank" class="inst__link">@avaeda</a></div>
+    <div class="inst__title">Follow us on Instagram</div>
+  </div>
+  <div class="inst__wrapper">
+    <div class="inst__gallery">
+      <div class="inst__item">
+        <div class="inst__bg">
+          {{ img({ className: 'inst__bg-img', name: 'inspiration-1', format: 'jpg', cover: 'true'}) }}
+        </div>
+      </div>
+      <div class="inst__item">
+        <div class="inst__bg">
+          {{ img({ className: 'inst__bg-img', name: 'inspiration-2', format: 'jpg', cover: 'true'}) }}
+        </div>
+      </div>
+      <div class="inst__item">
+        <div class="inst__bg">
+          {{ img({ className: 'inst__bg-img', name: 'inspiration-1', format: 'jpg', cover: 'true'}) }}
+        </div>
+      </div>
+      <div class="inst__item">
+        <div class="inst__bg">
+          {{ img({ className: 'inst__bg-img', name: 'inspiration-2', format: 'jpg', cover: 'true'}) }}
+        </div>
+      </div>
+      <div class="inst__item">
+        <div class="inst__bg">
+          {{ img({ className: 'inst__bg-img', name: 'inspiration-1', format: 'jpg', cover: 'true'}) }}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

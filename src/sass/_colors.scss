@@ -1,0 +1,58 @@
+$white: #fff;
+$white-2: #f8f8f8;
+$white-lucent: rgba(#fff,0.7);
+
+$black: #212124;
+$pink-granite: #BBA8A6;
+$slate: #74828E;
+$turquiose: #598A8C;
+$petrol-blue: #29454E;
+$earth: #54544F;
+$pebble: #C7C9C2;
+$antique-white: #EBEADF;
+$chalk: #F5F2F0;
+$red: #f00;
+
+$grey-1: #1F1B15;
+$grey-2: #3F3A32;
+$grey-3: #676157;
+$grey-4: #797672;
+$grey-5: #A6A098;
+$grey-6: #C9C6C1;
+$grey-7: #E0DDD9;
+$grey-8: #EEEDEC;
+$grey-9: #FBFBFB;
+
+$stone-1: #887E74;
+$stone-2: #D8CABC;
+$stone-3: #F2E9DF;
+$stone-4: #FEF7F0;
+$stone-5: #FFFBF8;
+
+$border-color-light: rgba($white, 0.5);
+$border-color-grey: $grey-7;
+
+$color-text: rgba($earth,.7);
+
+.bg {
+  &-black {
+    background-color: $black;
+  }
+  &-chalk {
+    background-color: $chalk;
+  }
+  &-chalk-lucent {
+    background-color: rgba($chalk,.5);
+  }
+  &-pebble {
+    background-color: $pebble;
+  }
+  &-pink-granite {
+    background-color: $pink-granite;
+  }
+}
+.color {
+  &-white {
+    color: $white!important;
+  }
+}

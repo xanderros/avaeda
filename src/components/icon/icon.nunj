@@ -1,0 +1,1 @@
+{% macro icon(class,name,width,height) %}<svg{% if class %} class="{{ class }}"{% endif %} width="{{ width }}" height="{{ height }}"><use xlink:href="/svg/sprite.svg#icon-{{name}}"></use></svg>{% endmacro %}

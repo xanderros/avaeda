@@ -1,0 +1,207 @@
+---
+title: Home
+
+keywords:
+description:
+
+socialTitle:
+socialDescription:
+socialImg:
+socialImgSquare:
+socialImgTwitter:
+---
+{% extends "../ext/base.nunj" %}
+
+{% block content %}
+  {{ header() }}
+  <div class="page">
+
+    {{ hero({
+      height: 'big',
+      verticalAlign: 'bottom',
+      scrollBtn: 'true',
+      title: 'Space to breathe.<sup>TM</sup>',
+      text: 'Create luxury outdoor spaces in commercial, public and garden settings.',
+      imgName: 'hero-home',
+      imgAlt: 'Space to breathe',
+      buttonName: 'Build your space',
+      buttonLink: '#'
+    }) }}
+
+    {{ wall({
+      bgColor: "pink-granite",
+      title: "Changing the way we treat outdoor spaces.",
+      text: "Our goal is to create a space, both physical and online, where this community."
+    }) }}
+
+    {{ advantages({
+      data: [{
+        title: "Moulded real oak",
+        iconName: 'ph',
+        iconWidth: '41',
+        iconHeight: '35'
+      },{
+        title: "Highly slip-resistent",
+        iconName: 'ph',
+        iconWidth: '41',
+        iconHeight: '35'
+      },{
+        title: "Rot and split resistant",
+        iconName: 'ph',
+        iconWidth: '41',
+        iconHeight: '35'
+      }]
+    }) }}
+
+    {% include '../../components/kind/kind.nunj' %}
+
+    <div class="box">
+      <div class="container container_small">
+        <div class="caption">
+          <div class="caption__title heading">
+            How Avaeda works
+          </div>
+          <div class="caption__desc text">
+            Our goal is to create a space, both physical and online, where this community.
+          </div>
+        </div>
+        {{ tabs({
+          data: [{
+            id: '1',
+            active: 'true',
+            tabName: 'Feature 1',
+            imgName: 'installation',
+            imgFormat: 'png',
+            imgAlt: '',
+            iconName: 'ph_dark',
+            iconWidth: '41',
+            iconHeight: '35',
+            title: 'Absolutely zero',
+            subtitle: 'Installation costs',
+            text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur.'
+          },{
+            id: '2',
+            tabName: 'Feature 2',
+            imgName: 'installation',
+            imgFormat: 'png',
+            imgAlt: '',
+            iconName: 'ph_dark',
+            iconWidth: '41',
+            iconHeight: '35',
+            title: 'Absolutely zero 2',
+            subtitle: 'Installation costs',
+            text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur.'
+          },{
+            id: '3',
+            tabName: 'Feature 3',
+            imgName: 'installation',
+            imgFormat: 'png',
+            imgAlt: '',
+            iconName: 'ph_dark',
+            iconWidth: '41',
+            iconHeight: '35',
+            title: 'Absolutely zero 3',
+            subtitle: 'Installation costs',
+            text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur.'
+          }]
+        }) }}
+      </div>
+    </div>
+
+    {% include '../../components/video/video.nunj' %}
+
+    <div class="bg-pink-granite">
+      <div class="container">
+        <div class="topic topic_paddings topic_white">
+          <div class="topic__base">
+            <h2 class="topic__title title">Our Products</h2>
+            <div class="topic__desc text">
+              Our goal is to create a space, both physical and online, where this community.
+            </div>
+          </div>
+          <div class="topic__side">
+            <a href="inspiration.html" class="link-btn">{{ icon('link-btn__icon','link-icon','32','32') }}Our Products</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    {% include '../../components/figure/figure.nunj' %}
+
+    <div class="box box_pb_small container">
+      <div class="row">
+        {{ block({
+          title: 'Absolutely zero',
+          subtitle: 'Installation costs',
+          text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur.',
+          img: 'pic_1',
+          imgFormat: 'png',
+          reverse: 'true'
+        }) }}
+      </div>
+      <div class="row">
+        {{ block({
+          title: 'Absolutely zero',
+          subtitle: 'Installation costs',
+          text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur.',
+          img: 'pic_2',
+          imgFormat: 'png'
+        }) }}
+      </div>
+      <div class="row">
+        {{ block({
+          note: 'PROFESSIONALS',
+          title: 'AvaedaPro',
+          desc: 'Helping you make <br>the most of your space.',
+          text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur.',
+          link: '#',
+          linkText: 'Visit Avaeda Pro',
+          img: 'pic_3',
+          imgFormat: 'jpg'
+        }) }}
+      </div>
+    </div>
+
+    <div class="bg-pebble">
+      <div class="container">
+        <div class="topic topic_paddings">
+          <div class="topic__base">
+            <div class="topic__note note">INSPIRATION</div>
+            <h2 class="topic__title title">Avaeda Inspiration</h2>
+            <div class="topic__desc text">
+              Helping you make
+              the most of your space.
+            </div>
+          </div>
+          <div class="topic__side">
+            <a href="inspiration.html" class="link-btn">{{ icon('link-btn__icon','link-icon','32','32') }}Inspiration</a>
+          </div>
+        </div>
+      </div>
+      <div class="pictures">
+        <div class="pictures__item">
+          <div class="pictures__bg">
+            {{ img({ className: 'pictures__bg-img', name: 'inspiration-1', format: 'jpg', mobile: 'true', cover: 'true'}) }}
+          </div>
+        </div>
+        <div class="pictures__item">
+          <div class="pictures__bg">
+            {{ img({ className: 'pictures__bg-img', name: 'inspiration-2', format: 'jpg', mobile: 'true', cover: 'true'}) }}
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="bg-pebble">
+      {% include '../../components/inst/inst.nunj' %}
+    </div>
+
+    {{ touch({
+      title: "Want to learn more about the projects we offer? <br>Get in touch with us.",
+      buttonLink: '#',
+      buttonTitle: 'Find Out More',
+      imgName: "learn"
+    }) }}
+  </div>
+  {% include '../../components/footer/footer.nunj' %}
+{% endblock content %}

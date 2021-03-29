@@ -1,0 +1,44 @@
+@include font-face(
+  'Mark',
+  '../fonts/Mark-Light',
+  300,
+  null,
+  woff2 woff,
+  'Mark-Light'
+);
+
+@include font-face(
+  'Mark',
+  '../fonts/Mark-Regular',
+  400,
+  null,
+  woff2 woff,
+  'Mark-Regular'
+);
+
+@include font-face(
+  'Mark Book',
+  '../fonts/Mark-Book',
+  400,
+  null,
+  woff2 woff,
+  'Mark-Book'
+);
+
+@include font-face(
+  'Mark',
+  '../fonts/Mark-Medium',
+  500,
+  null,
+  woff2 woff,
+  'Mark-Medium'
+);
+
+@include font-face(
+  'Mark',
+  '../fonts/Mark-Bold',
+  700,
+  null,
+  woff2 woff,
+  'Mark-Bold'
+);

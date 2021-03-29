@@ -1,0 +1,32 @@
+export default {
+  build: {
+    html: 'build',
+    scripts: 'build/js/',
+    styles: 'build/css/',
+    images: 'build/images/',
+    fonts: 'build/fonts/',
+    svg: 'build/svg/',
+    videos: 'build/video/',
+  },
+  src: {
+    templates: './src',
+    nunj: 'src/templates/pages/**/*.nunj',
+    scripts: 'src/js/index.js',
+    styles: 'src/sass/styles.scss',
+    images: 'src/images/**/*.*',
+    imagesInline: 'src/images/inline/',
+    fonts: 'src/fonts/**/*.*',
+    svg: 'src/svg/**/*.svg',
+    videos: 'src/video/**/*.*',
+  },
+  watch: {
+    nunj: ['src/**/*.nunj', 'global-data.json'],
+    scripts: 'src/js/**/*.js',
+    styles: 'src/**/*.{sass,scss}',
+    images: 'src/images/**/*.*',
+    fonts: 'src/fonts/**/*.*',
+    svg: 'src/svg/**/*.svg',
+    videos: 'src/video/**/*.*',
+  },
+  clean: 'build/',
+};

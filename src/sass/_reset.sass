@@ -1,0 +1,126 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video
+  margin: 0
+  padding: 0
+  border: 0
+  font: inherit
+  vertical-align: baseline
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0)
+
+*,
+*:before,
+*:after
+  +box
+
+img, fieldset
+  border: 0
+
+fieldset legend
+  display: none
+
+ul, li
+  list-style-type: none
+
+table
+  border: 0
+  border-collapse: collapse
+
+  td
+    padding: 0
+    vertical-align: top
+
+input, select, textarea
+  +box
+
+input[type=number]
+  -moz-appearance: textfield
+
+input[type=number]::-webkit-inner-spin-button
+  -webkit-appearance: none
+  margin: 0
+
+input[type=number]::-webkit-outer-spin-button
+  -webkit-appearance: none
+  margin: 0
+
+input[type=search]
+  -webkit-appearance: textfield
+
+input[type=search]::-webkit-search-decoration,
+input[type=search]::-webkit-search-cancel-button,
+input[type=search]::-webkit-search-results-button,
+input[type=search]::-webkit-search-results-decoration
+  display: none
+
+
+::selection
+  background: #33378f
+  color: #FFFFFF
+  text-shadow: none
+
+::-moz-selection
+  background: #33378f
+  color: #FFFFFF
+  text-shadow: none
+
+#__bs_notify__
+  padding: 2px !important
+  font-size: 10px !important
+  opacity: 0.75
+  user-select: none
+  pointer-events: none
+
+a[href^="tel"]
+  color: inherit
+  text-decoration: none
+
+button
+  user-select: none
+  border-radius: 0
+
+img
+  transition: opacity 0.35s ease-out
+  max-width: 100%
+  vertical-align: top
+
+img:not([src])
+  opacity: 0
+
+b,
+strong
+  font-weight: 600
+
+html, body
+  width: 100%
+  height: 100%
+  cursor: default
+  -webkit-font-smoothing: antialiased
+
+body
+  display: flex
+  flex-direction: column
+  +font-family-sans
+  font-weight: normal
+  font-size: 14px
+  line-height: 1
+  background: $white
+  color: $black
+
+.wrapper
+  position: relative
+  min-height: 100%
+  display: flex
+  flex-direction: column
+  width: 100%
+  flex: 1 0 auto

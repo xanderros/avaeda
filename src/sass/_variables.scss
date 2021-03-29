@@ -1,0 +1,39 @@
+$default-font-size: 16px;
+
+// transitions
+$default-transition-duration: 0.2s;
+$default-transition-function: ease-out;
+$default-transition: 0.2s ease-out;
+
+$nav-desktop-transition: 0.2s ease-out;
+$nav-mob-transition: 0.3s ease-out;
+$nav-mob-delay: 0.3s;
+
+// breakpoints
+$breakpoint-big: 1600px;
+$breakpoint-xxl: 1400px;
+$breakpoint-xl: 1200px;
+$breakpoint-lg: 992px;
+$breakpoint-md: 768px;
+$breakpoint-sm: 576px;
+$breakpoint-xs: 375px;
+
+// side paddings
+$offset-side: 45px;
+$offset-side-lg: 25px;
+$offset-side-sm: 15px;
+
+// container widths
+$container-width-smallest: 660px;
+$container-width-small: 1025px;
+$container-width: 1170px;
+$container-width-large: 1232px;
+$container-width-big: 1350px;
+$container-width-wide: 1600px;
+
+// header heights
+$header-top-height: 32px;
+$header-container-height: 98px;
+$header-height: $header-top-height + $header-container-height;
+$header-height-tablet: 68px;
+$header-height-mob: 50px;

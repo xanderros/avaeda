@@ -1,0 +1,12 @@
+{% macro img(props) %}
+  {% if props.mobile=='true' %}
+    <picture>
+      <source type="image/jpeg" {% if props.lazy!=='nolazy' %}data-{% endif %}srcset="/images/{{ props.name }}_mob.{{ props.format }}, /images/{{ props.name }}_mob@2x.{{ props.format }} 2x" media="(max-width: 480px)">
+      <img class="{% if props.lazy!=='nolazy' %}lazyload {% endif %}{{ props.className }}" {% if props.lazy!=='nolazy' %}data-{% endif %}src="/images/{{ props.name }}.{{ props.format }}" {% if props.lazy!=='nolazy' %}data-{% endif %}srcset="/images/{{ props.name }}@2x.{{ props.format }} 2x" alt="{{ props.alt }}"{% if props.cover %} data-sizes="auto"{% endif %}{% if props.contain %} data-sizes="auto"{% endif %}>
+    </picture>
+   {% else %}
+    <img class="{% if props.lazy!=='nolazy' %}lazyload {% endif %}{{ props.className }}" {% if props.lazy!=='nolazy' %}data-{% endif %}src="/images/{{ props.name }}.{{ props.format }}" {% if props.lazy!=='nolazy' %}data-{% endif %}srcset="/images/{{ props.name }}@2x.{{ props.format }} 2x" alt="{{ props.alt }}"{% if props.cover %} data-sizes="auto"{% endif %}{% if props.contain %} data-sizes="auto"{% endif %}>
+  {% endif %}
+{% endmacro %}
+
+

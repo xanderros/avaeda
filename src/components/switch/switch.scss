@@ -1,0 +1,73 @@
+// Switch Tabs
+$switch-transition: 0.3s ease-out;
+
+.switch {
+  &__container {
+    position: relative;
+    overflow: hidden;
+  }
+  &__btn {
+    @include font-family-book;
+    @include break-text;
+    display: block;
+    text-decoration: none;
+    cursor: pointer;
+    position: relative;
+    padding: 21px 20px;
+    border-bottom: 1px solid $grey-7;
+    letter-spacing: -0.02em;
+    font-size: 16px;
+    line-height: 1.4;
+    color: $earth;
+    transition: color $default-transition, border-bottom-color $default-transition;
+
+    &_active {
+      color: $black;
+    }
+    &:not(.switch__item_active) {
+      &:hover {
+        color: $black;
+      }
+    }
+  }
+  &__item {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity $switch-transition;
+
+    &_active {
+      position: relative;
+      pointer-events: auto;
+      opacity: 1;
+    }
+  }
+  &__content {
+    padding: 45px 0 50px;
+  }
+
+  @include media-up-md {
+    &__nav {
+      display: flex;
+      justify-content: center;
+    }
+    &__btn {
+      padding-left: 45px;
+      padding-right: 45px;
+      font-size: 17px;
+      text-align: center;
+      border-bottom: 2px solid $grey-8;
+
+      &_active {
+        border-bottom-color: $earth;
+      }
+    }
+    &__content {
+      padding: 64px 0 55px;
+    }
+  }
+}

@@ -1,0 +1,128 @@
+.hero {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  padding-top: $header-height-mob;
+  min-height: 561px;
+
+  // dark bg gradient
+  &:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 62%;
+    width: 100%;
+    background-image: linear-gradient(180deg, #212124 0%, rgba(33, 33, 36, 0) 100%);
+    opacity: .7;
+    z-index: 1;
+  }
+  &:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 87%;
+    background-image: linear-gradient(90deg, #212124 0%, rgba(33, 33, 36, 0) 100%);
+    opacity: .7;
+    z-index: 2;
+  }
+
+  &__bg {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  }
+  &__bg-img {
+    @include img-cover;
+  }
+  &__container {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    padding-bottom: 40px;
+  }
+  &__content {
+    position: relative;
+    z-index: 5;
+  }
+  &__title {
+    color: $white;
+    margin-bottom: 26px;
+  }
+  &__text {
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: -0.02em;
+    color: $white;
+    padding-right: 18px;
+  }
+  &__btn {
+    margin-top: 26px;
+  }
+  &__scroll {
+    align-self: flex-end;
+    z-index: 5;
+  }
+  &__scroll-btn {
+    @include button-reset;
+    @include font-family-sans;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    color: $white;
+    padding: 5px;
+    font-size: 14px;
+    line-height: 1.5;
+    letter-spacing: -0.02em;
+  }
+  &__scroll-icon {
+    margin-right: 9px;
+  }
+
+  // hero height
+  &_height {
+    &_big {
+      min-height: 100vh;
+    }
+  }
+
+  @include media-down-md {
+    &__scroll {
+      position: absolute;
+      bottom: 24px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+    &__text {
+      max-width: 327px;
+    }
+  }
+  @include media-up-md {
+    &__scroll {
+      margin-left: auto;
+      margin-bottom: -11px;
+    }
+    &__text {
+      max-width: 356px;
+    }
+
+    &_v_bottom {
+      min-height: 664px;
+
+      .hero {
+        &__container {
+          align-items: flex-end;
+          padding-bottom: 78px;
+        }
+      }
+    }
+  }
+  @include media-up-xl {
+    padding-top: $header-height;
+  }
+}

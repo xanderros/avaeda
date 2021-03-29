@@ -1,0 +1,41 @@
+{% macro tabs(props) %}
+  <div class="tabs">
+    <div class="tabs__container">
+      {% for item in props.data %}
+        <div class="tabs__item{% if item.active %} _active{% endif %}" id="tab-{{ item.id }}">
+          <div class="tabs__btn">
+            <div class="tabs__title">{{ item.tabName }}</div>
+            <div class="tabs__arrow">
+              <svg class="tabs__arrow-icon" width="13" height="8"><use xlink:href="/svg/sprite.svg#icon-arrow-down"></use></svg>
+            </div>
+          </div>
+          <div class="tabs__box">
+            <div class="tabs__content">
+              <div class="tabs-inner">
+                <div class="tabs-inner__col tabs-inner__col_pic">
+                  <div class="tabs-inner__pic"{% if item.active %} data-animation="fade-up" data-animation-delay="300"{% endif %}>
+                    <img class="tabs-inner__img" src="/images/{{ item.imgName }}.{{ item.imgFormat }}" srcset="/images/{{ item.imgName }}@2x.{{ item.imgFormat }} 2x" alt="{{ item.imgAlt }}">
+                  </div>
+                </div>
+                <div class="tabs-inner__col">
+                  <h3 class="tabs-inner__title heading"{% if item.active %} data-animation="fade-up"{% endif %}>{{ item.title }}<span>{{ item.subtitle }}</span></h3>
+                  <p class="tabs-inner__text text"{% if item.active %} data-animation="fade-up" data-animation-delay="150"{% endif %}>{{ item.text }}</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+    <div class="tabs__nav">
+      {% for item in props.data %}
+        <a href="#tab-{{ item.id }}" class="tabs__btn{% if item.active %} _active{% endif %}">
+          <div class="tabs__name">
+            <svg class="tabs__icon" width="{{ item.iconWidth }}" height="{{ item.iconHeight }}"><use xlink:href="/svg/sprite.svg#icon-{{ item.iconName }}"></use></svg>
+            <div class="tabs__title">{{ item.tabName }}</div>
+          </div>
+        </a>
+      {% endfor %}
+    </div>
+  </div>
+{% endmacro %}

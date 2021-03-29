@@ -1,0 +1,103 @@
+.btn {
+  @include button-reset;
+  @include font-family-sans;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px 40px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.5;
+  letter-spacing: normal;
+  background-color: transparent;
+  color: $black;
+  transition: color $default-transition, background-color $default-transition, border-color $default-transition, opacity $default-transition;
+
+  &_text {
+    padding: 8px;
+    font-size: 16px;
+
+    &:hover {
+      opacity: .8;
+    }
+  }
+  &_plane {
+    letter-spacing: -0.02em;
+    padding: 12px 28px;
+  }
+  &_sm {
+    padding: 14px 26px;
+  }
+
+  &_submit {
+    font-size: 16px;
+    color: $white;
+    padding: 3px 4px;
+
+    &:hover {
+      opacity: .8;
+    }
+  }
+  &_nav {
+    padding: 12px 43px;
+    color: $white;
+    border: 2px solid $white;
+  }
+  &_dark,
+  &_white {
+    border-width: 2px;
+    border-style: solid;
+  }
+  &_dark {
+    color: $black;
+    border-color: $black;
+
+    &:hover,
+    &:active {
+      color: $white;
+      background-color: $black;
+    }
+  }
+  &_white {
+    color: $white;
+    border-color: $white;
+
+    &:hover,
+    &:active {
+      color: $black;
+      background-color: $white;
+    }
+  }
+
+  @include media-up-sm {
+    padding: 18px 38px;
+    font-size: 16px;
+
+    &_text {
+      padding: 8px;
+    }
+    &_submit {
+      padding: 3px 4px;
+    }
+    &_nav {
+      padding: 8px 23px;
+      font-size: 14px;
+      color: $black;
+      background-color: $stone-5;
+
+      &:hover,
+      &:active {
+        background-color: $white;
+      }
+    }
+    &_plane {
+      padding: 12px 28px;
+      font-size: 14px;
+    }
+    &_sm {
+      padding: 10px 26px;
+      font-size: 14px;
+    }
+  }
+}

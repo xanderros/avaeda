@@ -1,0 +1,55 @@
+<form class="form" id="contact-form">
+  <div class="form__container">
+    <div class="grid grid_form_2">
+      <div class="grid__col">
+        <div class="form__row">
+          <label class="form__label" for="form-name">Name</label>
+          <div class="form__control">
+            <input class="form__input" id="form-name" type="text" required name="name">
+            <div class="form__error-message">Please enter name</div>
+          </div>
+        </div>
+        <div class="form__row">
+          <label class="form__label" for="form-email">Email</label>
+          <div class="form__control">
+            <input class="form__input" id="form-email" type="email" required name="email-address">
+            <div class="form__error-message">Please enter email address</div>
+          </div>
+        </div>
+        <div class="form__row">
+          <label class="form__label" for="form-phone">Phone number</label>
+          <div class="form__control">
+            <input class="form__input" id="form-phone" type="tel" name="phone-number">
+            <div class="form__error-message">Please enter phone number</div>
+          </div>
+        </div>
+      </div>
+      <div class="grid__col">
+        <div class="form__row">
+          <label class="form__label" for="form-company-name">Company name</label>
+          <div class="form__control">
+            <input class="form__input" id="form-company-name" type="text" required name="company-name">
+            <div class="form__error-message">Please enter company name</div>
+          </div>
+        </div>
+        <div class="form__row">
+          <label class="form__label" for="form-description">How can we help?</label>
+          <div class="form__control">
+            <textarea rows="5" class="form__textarea" id="form-description" name="description"></textarea>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="form__button">
+      <button type="submit" value="Submit" id="form-submit" class="button button_bold">Submit</button>
+    </div>
+  </div>
+  <div class="form__success">
+    <div class="form__success-box">
+      <div class="form__success-title">Your message has been successfully sent</div>
+      <p class="form__success-text">
+        We will get in touch with you as soon as we can
+      </p>
+    </div>
+  </div>
+</form>

@@ -1,0 +1,154 @@
+.slider {
+  position: relative;
+
+  .swiper-slide {
+    cursor: pointer;
+
+    &:focus {
+      outline: none;
+    }
+  }
+  .swiper-button-next,
+  .swiper-button-prev {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: auto;
+    bottom: 5px;
+    margin-top: 0;
+    width: 44px;
+    height: 44px;
+    background: none;
+    border: 2px solid $grey-9;
+    border-radius: 50%;
+
+    &:focus {
+      outline: none;
+    }
+  }
+  .swiper-button-prev {
+    left: auto;
+    right: 69px;
+
+    .slider__arrow {
+      transform: rotate(180deg);
+    }
+  }
+  .swiper-scrollbar {
+    border-radius: 0;
+    height: 1px;
+    background: rgba($white,.7);
+  }
+  .swiper-scrollbar-drag {
+    border-radius: 0;
+    top: -2px;
+    height: 5px;
+    background: $white;
+  }
+
+  &__header {
+    position: relative;
+    padding-right: 160px;
+    margin-bottom: 50px;
+  }
+  &__scrollbar {
+    margin-top: 60px;
+    position: relative;
+    height: 5px;
+  }
+  &__box {
+    position: relative;
+  }
+
+  @include media-up-lg {
+    &__scrollbar {
+      margin-top: 70px;
+    }
+  }
+  @include media-up-xl {
+    &__scrollbar {
+      margin-top: 80px;
+    }
+  }
+
+  &_gallery {
+    .slider {
+      &__box {
+        @include responsive-ratio(1440,527);
+      }
+      &__img {
+        @include img-cover;
+      }
+    }
+    .swiper-container {
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+    }
+    @include media-down-sm {
+      .slider {
+        &__header {
+          padding-right: 0;
+        }
+        &__arrows {
+          display: none;
+        }
+      }
+    }
+  }
+  &_product {
+    max-width: 569px;
+
+    .swiper-slide {
+      background-size: cover;
+      background-position: center;
+    }
+
+    .slider {
+      &__box {
+        @include responsive-ratio(569,453);
+      }
+      &__top {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+      }
+      &__img {
+        @include img-cover;
+      }
+      &__thumbs {
+        padding: 0;
+        margin-top: 8px;
+
+        .swiper-slide {
+          height: 100%;
+        }
+        .slider {
+          &__img-wrap {
+            position: relative;
+            @include responsive-ratio(1,1);
+          }
+        }
+      }
+    }
+
+    @include media-up-lg {
+      .slider {
+        &__thumbs {
+          margin-top: 10px;
+        }
+      }
+    }
+    @include media-up-xl {
+      .slider {
+        &__thumbs {
+          margin-top: 16px;
+        }
+      }
+    }
+  }
+}

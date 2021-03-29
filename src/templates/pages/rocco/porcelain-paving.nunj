@@ -1,0 +1,371 @@
+---
+title: Rocco - Porcelain Paving
+
+keywords:
+description:
+
+socialTitle:
+socialDescription:
+socialImg:
+socialImgSquare:
+socialImgTwitter:
+---
+{% extends "../../ext/base.nunj" %}
+
+{% block content %}
+  {{ header() }}
+  <div class="page">
+
+    {{ hero({
+      scrollBtn: 'true',
+      title: 'Rocco',
+      text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+      imgName: 'hero-rocco',
+      imgAlt: 'Rocco'
+    }) }}
+
+    {{ view({
+      data: [{
+        title: 'About Rocco',
+        link: '/rocco'
+      },{
+        active: 'true',
+        title: 'Porcelain Paving',
+        link: '/rocco/porcelain-paving.html'
+      },{
+        title: 'Porcelain Cladding',
+        link: '/rocco/porcelain-cladding.html'
+      },{
+        title: 'Shop Rocco',
+        link: '/rocco/shop.html'
+      }]
+    }) }}
+
+    <div class="box">
+      <div class="container container_small">
+        <div class="caption">
+          <div class="caption__title heading">
+            Key features
+          </div>
+          <div class="caption__desc text">
+            What makes Natura products the perfect choice?
+          </div>
+        </div>
+        {{ tabs({
+          data: [{
+            id: '1',
+            active: 'true',
+            tabName: 'Stunning finishes',
+            imgName: 'installation',
+            imgFormat: 'png',
+            imgAlt: '',
+            iconName: 'ph_dark',
+            iconWidth: '41',
+            iconHeight: '35',
+            title: 'Absolutely zero',
+            subtitle: 'Installation costs',
+            text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur.'
+          },{
+            id: '2',
+            tabName: 'Low maintenance',
+            imgName: 'installation',
+            imgFormat: 'png',
+            imgAlt: '',
+            iconName: 'ph_dark',
+            iconWidth: '41',
+            iconHeight: '35',
+            title: 'Absolutely zero 2',
+            subtitle: 'Installation costs',
+            text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur.'
+          },{
+            id: '3',
+            tabName: 'Sustainable',
+            imgName: 'installation',
+            imgFormat: 'png',
+            imgAlt: '',
+            iconName: 'ph_dark',
+            iconWidth: '41',
+            iconHeight: '35',
+            title: 'Absolutely zero 3',
+            subtitle: 'Installation costs',
+            text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur.'
+          }]
+        }) }}
+      </div>
+    </div>
+
+    <div class="section bg-chalk">
+      <div class="container">
+        {{ unit({
+          note: 'Section label',
+          title: 'Decking boards',
+          text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur.',
+          points: [{
+            iconName: 'tools',
+            iconWidth: '30',
+            iconHeight: '29',
+            text: 'Moulded on real oak'
+          },{
+            iconName: 'tools',
+            iconWidth: '30',
+            iconHeight: '29',
+            text: 'Highly slip-resistent'
+          },{
+            iconName: 'tools',
+            iconWidth: '30',
+            iconHeight: '29',
+            text: 'Rot and split resistent'
+          }],
+          buttons: [{
+            title: 'Explore products',
+            link: '#'
+          }],
+          gallery: [{
+            imgName: 'tile_1',
+            imgFormat: 'jpg',
+            imgAlt: ''
+          },{
+            imgName: 'tile_2',
+            imgFormat: 'jpg',
+            imgAlt: ''
+          },{
+            imgName: 'tile_1',
+            imgFormat: 'jpg',
+            imgAlt: ''
+          },{
+            imgName: 'tile_2',
+            imgFormat: 'jpg',
+            imgAlt: ''
+          },{
+            imgName: 'tile_1',
+            imgFormat: 'jpg',
+            imgAlt: ''
+          }]
+        }) }}
+      </div>
+    </div>
+    <div class="section bg-chalk-lucent">
+      <div class="container">
+        {{ unit({
+          reverse: 'true',
+          note: 'Section label',
+          title: 'Finishing profiles',
+          text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur.',
+          points: [{
+            iconName: 'tools',
+            iconWidth: '30',
+            iconHeight: '29',
+            text: 'Moulded on real oak'
+          },{
+            iconName: 'tools',
+            iconWidth: '30',
+            iconHeight: '29',
+            text: 'Highly slip-resistent'
+          },{
+            iconName: 'tools',
+            iconWidth: '30',
+            iconHeight: '29',
+            text: 'Rot and split resistent'
+          }],
+          buttons: [{
+            title: 'Explore products',
+            link: '#'
+          }],
+          gallery: [{
+            imgName: 'tile_1',
+            imgFormat: 'jpg',
+            imgAlt: ''
+          },{
+            imgName: 'tile_2',
+            imgFormat: 'jpg',
+            imgAlt: ''
+          },{
+            imgName: 'tile_1',
+            imgFormat: 'jpg',
+            imgAlt: ''
+          },{
+            imgName: 'tile_2',
+            imgFormat: 'jpg',
+            imgAlt: ''
+          },{
+            imgName: 'tile_1',
+            imgFormat: 'jpg',
+            imgAlt: ''
+          }]
+        }) }}
+      </div>
+    </div>
+    <div class="section bg-chalk">
+      <div class="container">
+        {{ unit({
+          note: 'Section label',
+          title: 'Fixings and accessories',
+          text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur.',
+          points: [{
+            iconName: 'tools',
+            iconWidth: '30',
+            iconHeight: '29',
+            text: 'Moulded on real oak'
+          },{
+            iconName: 'tools',
+            iconWidth: '30',
+            iconHeight: '29',
+            text: 'Highly slip-resistent'
+          },{
+            iconName: 'tools',
+            iconWidth: '30',
+            iconHeight: '29',
+            text: 'Rot and split resistent'
+          }],
+          buttons: [{
+            title: 'Explore products',
+            link: '#'
+          }],
+          gallery: [{
+            imgName: 'tile_1',
+            imgFormat: 'jpg',
+            imgAlt: ''
+          },{
+            imgName: 'tile_2',
+            imgFormat: 'jpg',
+            imgAlt: ''
+          },{
+            imgName: 'tile_1',
+            imgFormat: 'jpg',
+            imgAlt: ''
+          },{
+            imgName: 'tile_2',
+            imgFormat: 'jpg',
+            imgAlt: ''
+          },{
+            imgName: 'tile_1',
+            imgFormat: 'jpg',
+            imgAlt: ''
+          }]
+        }) }}
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="container">
+        <div class="topic mb-3">
+          <div class="topic__base">
+            <div class="topic__note note">
+              SPECIFICATION
+            </div>
+            <h2 class="topic__title title">
+              Technical Specification
+            </h2>
+            <div class="topic__desc text">
+              Helping you make<br>
+              the most of your space.
+            </div>
+          </div>
+        </div>
+        <div class="spec">
+          <div class="spec__row">
+            <div class="spec__cell">
+              Allowable Load (Uniformly distributed)
+            </div>
+            <div class="spec__cell">
+              >4.0kN/m²
+            </div>
+          </div>
+          <div class="spec__row">
+            <div class="spec__cell">
+              Slip resistance (Pendulum Test Values)
+            </div>
+            <div class="spec__cell">
+              59 (dry), 43 (wet)
+            </div>
+          </div>
+          <div class="spec__row">
+            <div class="spec__cell">
+              Scratch resistance (Furniture Leg report)
+            </div>
+            <div class="spec__cell">
+              No damage identified
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section bg-chalk">
+      <div class="container">
+        <div class="topic mb-3">
+          <div class="topic__base">
+            <div class="topic__note note">
+              EXTRAS
+            </div>
+            <h2 class="topic__title title">
+              Downloads
+            </h2>
+          </div>
+        </div>
+        <div class="download">
+          <div class="download__item">
+            <div class="download__top">
+              <div class="download__title">
+                Product Info
+              </div>
+              <div class="download__desc">
+                Lorem ipsum dolor sit amet
+              </div>
+            </div>
+            <div class="download__btn">
+              <a href="#" class="btn btn_text">Download</a>
+            </div>
+          </div>
+          <div class="download__item">
+            <div class="download__top">
+              <div class="download__title">
+                2021 Brochure
+              </div>
+              <div class="download__desc">
+                Lorem ipsum dolor sit amet
+              </div>
+            </div>
+            <div class="download__btn">
+              <a href="#" class="btn btn_text">Download</a>
+            </div>
+          </div>
+          <div class="download__item">
+            <div class="download__top">
+              <div class="download__title">
+                Technical Spec
+              </div>
+              <div class="download__desc">
+                Lorem ipsum dolor sit amet
+              </div>
+            </div>
+            <div class="download__btn">
+              <a href="#" class="btn btn_text">Download</a>
+            </div>
+          </div>
+          <div class="download__item">
+            <div class="download__top">
+              <div class="download__title">
+                Product Range
+              </div>
+              <div class="download__desc">
+                Lorem ipsum dolor sit amet
+              </div>
+            </div>
+            <div class="download__btn">
+              <a href="#" class="btn btn_text">Download</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    {{ touch({
+      title: "Want to learn more about the projects we offer? <br>Get in touch with us.",
+      buttonLink: '#',
+      buttonTitle: 'Find Out More',
+      imgName: "learn-green"
+    }) }}
+  </div>
+  {% include '../../../components/footer/footer.nunj' %}
+{% endblock content %}

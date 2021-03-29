@@ -1,0 +1,58 @@
+{% macro unit(props) %}
+  <div class="unit{% if props.reverse %} unit_reverse{% endif %}">
+    <div class="unit__side">
+      {% if props.img %}
+        <img class="unit__img lazyload" data-src="/images/{{ props.img }}.{{ props.imgFormat }}" data-srcset="/images/{{ props.img }}@2x.{{ props.imgFormat }} 2x" alt="{{ props.title }}">
+      {% else %}
+        <div class="slider slider_product">
+          <div class="slider__box">
+            <div class="swiper-container slider__top">
+              <div class="swiper-wrapper">
+                {% for item in props.gallery %}
+                  <div class="swiper-slide">
+                    <img class="slider__img" src="/images/{{ item.imgName }}.{{ item.imgFormat }}" srcset="/images/{{ item.imgName }}@2x.{{ item.imgFormat }} 2x" alt="{{ item.imgAlt }}">
+                  </div>
+                {% endfor %}
+              </div>
+            </div>
+          </div>
+          <div class="swiper-container slider__thumbs">
+            <div class="swiper-wrapper">
+              {% for item in props.gallery %}
+                <div class="swiper-slide">
+                  <div class="slider__img-wrap">
+                    <img class="slider__img" src="/images/{{ item.imgName }}.{{ item.imgFormat }}" srcset="/images/{{ item.imgName }}@2x.{{ item.imgFormat }} 2x" alt="{{ item.imgAlt }}">
+                  </div>
+                </div>
+              {% endfor %}
+            </div>
+          </div>
+        </div>
+      {% endif %}
+    </div>
+    <div class="unit__base">
+      {% if props.note %}
+        <div class="unit__note note">{{ props.note }}</div>
+      {% endif %}
+      <h3 class="unit__title heading">{{ props.title }}</h3>
+      <p class="unit__text text">{{ props.text }}</p>
+      <div class="unit__points">
+        {% for item in props.points %}
+          <div class="unit__point">
+            <div class="unit__point-side">
+              <svg class="unit__point-icon" width="{{ item.iconWidth }}" height="{{ item.iconHeight }}"><use xlink:href="/svg/sprite.svg#icon-{{ item.iconName }}"></use></svg>
+            </div>
+            <div class="unit__point-text">{{ item.text }}</div>
+          </div>
+        {% endfor %}
+      </div>
+      <div class="unit__btns">
+        {% for item in props.buttons %}
+          <div class="unit__btn">
+            <a href="{{ item.link }}" class="btn btn_dark">{{ item.title }}</a>
+          </div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+{% endmacro %}

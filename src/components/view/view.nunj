@@ -1,0 +1,25 @@
+{% macro view(props) %}
+  <div class="popup popup_md border-bottom">
+    <div class="view">
+      <div class="view__box container">
+        <div class="view__title">
+          Now Viewing
+        </div>
+        <div class="view__btn popup__btn"></div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="popup__box">
+        <div class="popup__content">
+          <div class="popup__close"><span class="popup__close-icon"></span></div>
+          <div class="popup__title">Now Viewing</div>
+          <div class="links">
+            {% for item in props.data %}
+              <a href="{{ item.link }}" class="links__item{% if item.active %} links__item_active{% endif %}">{{ item.title }}</a>
+            {% endfor %}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+{% endmacro %}

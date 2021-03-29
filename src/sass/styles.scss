@@ -1,0 +1,30 @@
+@import 'variables';
+@import 'colors';
+@import 'lib/base';
+@import 'fonts';
+@import 'reset';
+@import 'global';
+@import 'layout';
+@import 'animations';
+
+/***=== COMPONENTS ===***/
+@import '../components/header/header';
+@import '../components/footer/footer';
+@import '../components/hero/hero';
+@import '../components/btn/btn';
+@import '../components/touch/touch';
+@import '../components/wall/wall';
+@import '../components/inst/inst';
+@import '../components/advantages/advantages';
+@import '../components/kind/kind';
+@import '../components/tabs/tabs';
+@import '../components/switch/switch';
+@import '../components/block/block';
+@import '../components/figure/figure';
+@import '../components/video/video';
+@import '../components/form/form';
+@import '../components/accordion/accordion';
+@import './node_modules/swiper/dist/css/swiper.min';
+@import '../components/slider/slider';
+@import '../components/view/view';
+@import '../components/unit/unit';

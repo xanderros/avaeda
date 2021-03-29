@@ -1,0 +1,239 @@
+---
+title: Frequently asked questions
+
+keywords:
+description:
+
+socialTitle:
+socialDescription:
+socialImg:
+socialImgSquare:
+socialImgTwitter:
+---
+{% extends "../ext/base.nunj" %}
+
+{% block content %}
+  {{ header('dark') }}
+  <div class="page">
+
+    <div class="cover">
+      <div class="container">
+        <div class="frame">
+          <div class="lead">
+            <div class="lead__note">
+              Get in touch
+            </div>
+            <h1 class="lead__title">
+              Frequently asked questions
+            </h1>
+            <div class="lead__desc">
+              Dont see your email answered? Send an email instead.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="switch popup popup_md">
+      <div class="switch__mob-nav">
+        <div class="view">
+          <div class="view__box container">
+            <div class="view__title">
+              Now Viewing
+            </div>
+            <div class="view__btn popup__btn">
+              General
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="popup__box">
+          <div class="popup__content">
+            <div class="popup__close"><span class="popup__close-icon"></span></div>
+            <div class="popup__title">Now Viewing</div>
+            <div class="switch__nav">
+              <a href="#tab-1" class="switch__btn switch__btn_active">General</a>
+              <a href="#tab-2" class="switch__btn">Pro</a>
+              <a href="#tab-3" class="switch__btn">Warranty and returns</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="switch__container">
+          <div class="switch__item switch__item_active" id="tab-1">
+            <div class="switch__box">
+              <div class="switch__content">
+                {# switch tab-1 content START #}
+                <div class="container container_smallest">
+                  {{ accordion({
+                    data: [{
+                      active: "true",
+                      title: "Lorem ipsum dolor sit amet, consectetur adipiscing elit?",
+                      content: "
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+"
+                    },{
+                      title: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua?",
+                      content: "
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+"
+                    },{
+                      title: "Lorem ipsum dolor sit amet, consectetur adipiscing elit?",
+                      content: "
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+"
+                    },{
+                      title: "Lorem ipsum dolor sit amet, consectetur adipiscing elit?",
+                      content: "
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+"
+                    },{
+                      title: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua?",
+                      content: "
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+"
+                    },{
+                      title: "Lorem ipsum dolor sit amet, consectetur adipiscing elit?",
+                      content: "
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+"
+                    },{
+                      title: "Lorem ipsum dolor sit amet, consectetur adipiscing elit?",
+                      content: "
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+"
+                    },{
+                      title: "Lorem ipsum dolor sit amet, consectetur adipiscing elit?",
+                      content: "
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+"
+                    },{
+                      title: "Lorem ipsum dolor sit amet, consectetur adipiscing elit?",
+                      content: "
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+"
+                    },{
+                      title: "Lorem ipsum dolor sit amet, consectetur adipiscing elit?",
+                      content: "
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+"
+                    }]
+                  }) }}
+                </div>
+                {# switch tab-1 content END #}
+              </div>
+            </div>
+          </div>
+          <div class="switch__item" id="tab-2">
+            <div class="switch__box">
+              <div class="switch__content">
+                {# switch tab-2 content START #}
+                <div class="container container_smallest">
+                  {{ accordion({
+                    data: [{
+                      title: "Lorem ipsum dolor sit amet, consectetur adipiscing elit?",
+                      content: "
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+"
+                    },{
+                      title: "Lorem ipsum dolor sit amet, consectetur adipiscing elit?",
+                      content: "
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+"
+                    },{
+                      title: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua?",
+                      content: "
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+"
+                    },{
+                      title: "Lorem ipsum dolor sit amet, consectetur adipiscing elit?",
+                      content: "
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+"
+                    },{
+                      title: "Lorem ipsum dolor sit amet, consectetur adipiscing elit?",
+                      content: "
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+"
+                    },{
+                      title: "Lorem ipsum dolor sit amet, consectetur adipiscing elit?",
+                      content: "
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+"
+                    },{
+                      title: "Lorem ipsum dolor sit amet, consectetur adipiscing elit?",
+                      content: "
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+"
+                    },{
+                      title: "Lorem ipsum dolor sit amet, consectetur adipiscing elit?",
+                      content: "
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+"
+                    }]
+                  }) }}
+                </div>
+                {# switch tab-2 content END #}
+              </div>
+            </div>
+          </div>
+          <div class="switch__item" id="tab-3">
+            <div class="switch__box">
+              <div class="switch__content">
+                {# switch tab-3 content START #}
+                <div class="container container_smallest">
+                  {{ accordion({
+                    data: [{
+                      title: "Lorem ipsum dolor sit amet, consectetur adipiscing elit?",
+                      content: "
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+"
+                    },{
+                      title: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua?",
+                      content: "
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+"
+                    },{
+                      title: "Lorem ipsum dolor sit amet, consectetur adipiscing elit?",
+                      content: "
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+"
+                    },{
+                      title: "Lorem ipsum dolor sit amet, consectetur adipiscing elit?",
+                      content: "
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+"
+                    },{
+                      title: "Lorem ipsum dolor sit amet, consectetur adipiscing elit?",
+                      content: "
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+"
+                    },{
+                      title: "Lorem ipsum dolor sit amet, consectetur adipiscing elit?",
+                      content: "
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+"
+                    }]
+                  }) }}
+                </div>
+                {# switch tab-3 content END #}
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+
+    {{ touch({
+      title: "Want to learn more about the projects we offer? <br>Get in touch with us.",
+      buttonLink: '#',
+      buttonTitle: 'Find Out More',
+      imgName: "learn-green"
+    }) }}
+  </div>
+  {% include '../../components/footer/footer.nunj' %}
+{% endblock content %}

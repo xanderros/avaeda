@@ -1,0 +1,57 @@
+.view {
+  padding-top: 18px;
+  padding-bottom: 18px;
+  border-bottom: 1px solid $grey-8;
+
+  &__box {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+  &__title {
+    white-space: nowrap;
+    text-align: center;
+    @include font-family-book;
+    font-size: 14px;
+    line-height: 18px;
+    color: $grey-6;
+    margin-right: 20px;
+  }
+  &__btn {
+    position: relative;
+    cursor: pointer;
+    padding: 13px 45px 13px 18px;
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 500;
+
+    &:before,
+    &:after {
+      content: '';
+      position: absolute;
+      margin-top: -1px;
+      top: 50%;
+      width: 8px;
+      height: 2px;
+      background-color: $black;
+      transition: background-color $default-transition;
+    }
+    &:before {
+      right: 23px;
+      transform: rotate(225deg);
+    }
+    &:after {
+      right: 18px;
+      transform: rotate(135deg);
+    }
+  }
+
+  @include media-up-xs {
+    &__title {
+      margin-right: 30px;
+    }
+  }
+  @include media-up-md {
+    display: none;
+  }
+}

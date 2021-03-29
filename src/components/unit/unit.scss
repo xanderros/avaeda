@@ -1,0 +1,97 @@
+.unit {
+  &__side {
+    max-width: 420px;
+    margin-bottom: 40px;
+  }
+  &__note {
+    text-transform: uppercase;
+    color: $earth;
+    margin-bottom: 11px;
+  }
+  &__title {
+    margin-bottom: 22px;
+  }
+  &__points {
+    margin-top: 22px;
+  }
+
+  // points
+  &__point {
+    display: flex;
+
+    &:not(:last-child) {
+      margin-bottom: 15px;
+    }
+  }
+  &__point-side {
+    min-width: 20px;
+    width: 36px;
+    margin-right: 10px;
+  }
+  &__point-icon {
+    max-width: 100%;
+  }
+  &__point-text {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 1.4;
+    letter-spacing: -0.02em;
+    color: $earth;
+  }
+  // buttons
+  &__btns {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 16px;
+  }
+  &__btn {
+    margin-top: 16px;
+    margin-right: 16px;
+  }
+
+  &_dark {
+    background-color: $chalk;
+  }
+
+  @include media-up-lg {
+    display: flex;
+    align-items: center;
+
+    &__side {
+      max-width: 100%;
+      flex: 1;
+      padding-left: 0;
+      padding-right: 0;
+      margin-top: 0;
+      margin-bottom: 0;
+      margin-right: 80px;
+    }
+    &__base {
+      width: 48%;
+    }
+    &__text {
+      max-width: 430px;
+    }
+
+    &_reverse {
+      flex-direction: row-reverse;
+
+      .unit {
+        &__side {
+          margin-left: 80px;
+          margin-right: 0;
+          text-align: right;
+        }
+      }
+    }
+  }
+
+  @include media-up-xl {
+    &__base {
+      width: 42%;
+    }
+  }
+}

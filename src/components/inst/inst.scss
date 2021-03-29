@@ -1,0 +1,91 @@
+.inst {
+  padding-top: 65px;
+  padding-bottom: 50px;
+
+  &__header {
+    text-align: center;
+    margin-bottom: 24px;
+  }
+  &__profile {
+    margin-bottom: 1px;
+  }
+  &__link {
+    text-decoration: none;
+    font-size: 14px;
+    line-height: 1.5;
+    letter-spacing: -0.01em;
+    color: $earth;
+    transition: opacity $default-transition;
+
+    &:hover {
+      opacity: .7;
+    }
+  }
+  &__title {
+    font-size: 24px;
+    line-height: 1.4;
+    letter-spacing: -0.01em;
+    color: $black;
+  }
+  &__wrapper {
+    overflow-x: auto;
+  }
+  &__gallery {
+    display: flex;
+    padding-left: 5px;
+    padding-right: 5px;
+    width: calc(285vw - 10px);
+  }
+  &__item {
+    position: relative;
+    width: 57vw;
+    padding-left: 3px;
+    padding-right: 3px;
+  }
+  &__bg {
+    @include responsive-ratio(1,1);
+    position: relative;
+  }
+  &__bg-img {
+    @include img-cover;
+  }
+
+  @media (min-width: 500px) {
+    &__gallery {
+      width: calc(185vw - 10px);
+    }
+    &__item {
+      width: 37vw;
+    }
+  }
+  @include media-up-md {
+    padding-top: 75px;
+    padding-bottom: 70px;
+
+    &__gallery {
+      width: calc(110vw - 10px);
+    }
+    &__item {
+      width: 22vw;
+    }
+  }
+  @include media-up-lg {
+    &__wrapper {
+      overflow: visible;
+    }
+    &__gallery {
+      width: 100%;
+    }
+    &__item {
+      width: 20%;
+    }
+  }
+  @include media-up-xl {
+    padding-top: 81px;
+    padding-bottom: 95px;
+
+    &__header {
+      margin-bottom: 28px;
+    }
+  }
+}
